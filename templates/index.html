@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+    <title>Document</title>
+</head>
+<body >
+    <div class="heading"> <h1 style="text-align: center; margin-top: 30px;">Mark Your Attendance</h1></div>
+    <div>
+        <form action="/video">
+            <input type="submit" name="Implement ml" value="Click Here" class="mll">
+        </form>
+        <h1 style="text-align: center; margin-top: 50px; margin-bottom: 20px;">If not Registered, Register Here</h1>
+        <form action="/" method="POST"  enctype="multipart/form-data" class="form">
+            <input type="text" placeholder="Enter your Name" class="form-control txt" name="name"/>
+            <span style="height: 30px;"><input type="file" class="form-control" name="imagefile"/></span>
+            <div style="margin-bottom: 15px;"><input type="submit" class="btn btn-primary mll" value="Registeration Image"></div>
+        </form>
+        <a href="/get_csv" style="text-align: center; margin-left: 42%;">Click Here to Download the Attendance sheet</a>
+        
+    </div>
+</body>
+</html>
